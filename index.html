@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div id="info">
+            <div id="config">
+                <form id="config-form">
+                    <h3> Choose a game size!</h3>
+                    <p>3 <input type="range" name="totalPairs" min="3" max="20" value="10"> 20</p>
+                    <p><button>Start New Game!</button></p>
+
+                </form>
+            </div>
+            <div id="title">
+                <h1>Can you find all matching pairs?</h1>
+            </div>
+            <div id="scoreboard">
+                <div>
+                    <h3>Total Moves (Record)</h3>
+                    <p><span id="score">0</span> (<span id="best-score">-</span>)</p>
+                </div>
+                <div>
+                    <h3>Remaining Pairs</h3>
+                    <p id="remaining-matches">10</p>
+                </div>
+            </div>
+        </div>
+        <div id="board">
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

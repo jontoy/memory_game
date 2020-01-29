@@ -1,0 +1,50 @@
+#board {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 1%;
+
+}
+
+#info {
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    border-radius: 2%;
+
+}
+#config {
+    flex: 1;
+    margin: 10px;
+    padding: 0 10px;
+
+}
+#scoreboard {
+    flex: 1;
+    margin: 10px;
+    padding: 0 10px;
+}
+#title {
+    text-align: center;
+    margin: 20px;
+    flex: 4;
+}
+.card {
+    flex: 1 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: purple;
+    font-size: 10rem;
+    text-align: center;
+    border-radius: 5%;
+    transition: background-color 0.5s;
+}
+
+.card.correct {
+    background-color: green;
+}
+
+.card.in-progress {
+    background-color: blue;
+}
+
